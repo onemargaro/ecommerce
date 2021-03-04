@@ -18,6 +18,11 @@
     }
   },
   "rules": {
-    "space-before-function-paren": ["error", "never"]
+    "space-before-function-paren": ["error", "never"],
+    "multiline-ternary": ["error", "never"],
+    "camelcase": [
+      "error",
+      { "properties": "never", "ignoreDestructuring": true }
+    ]
   }
 }
