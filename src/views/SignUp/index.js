@@ -14,10 +14,10 @@ import AuthContext from 'context/auth/auth.context'
 const SignUp = () => {
   // TODO: remove test data
   const [user, setUser] = React.useState({
-    email: 'holi@mail.com',
-    first_name: 'John',
-    last_name: 'Doe',
-    password: 'holi123',
+    email: '',
+    first_name: '',
+    last_name: '',
+    password: '',
     role: 'CUSTOMER'
   })
   const { signUp } = React.useContext(AuthContext)

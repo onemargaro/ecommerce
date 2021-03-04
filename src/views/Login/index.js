@@ -14,8 +14,8 @@ import { Link } from 'react-router-dom'
 const Login = () => {
   // TODO: remove test data
   const [user, setUser] = React.useState({
-    email: 'margaro@holia123.com',
-    password: 'heybro'
+    email: '',
+    password: ''
   })
   const { signIn } = React.useContext(AuthContext)
   const onChange = (event) => {
