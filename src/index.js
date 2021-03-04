@@ -1,12 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.scss'
-import Routes from './routes'
+import { BrowserRouter } from 'react-router-dom'
+import './index.sass'
+import './_variables.sass'
+import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Routes />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 )
