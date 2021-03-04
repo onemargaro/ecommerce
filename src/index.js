@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import './index.sass'
+import './index.scss'
 import './_variables.sass'
 import App from './App'
 import reportWebVitals from './reportWebVitals'

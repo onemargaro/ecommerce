@@ -70,7 +70,7 @@ const Home = () => {
                 value={search}
                 onChange={onChange}
                 name="search"
-                type="serach"
+                type="search"
                 placeholder="Product name"
               />
             </Control>
