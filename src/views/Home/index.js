@@ -34,7 +34,9 @@ const Home = () => {
     }
     return dispatch({
       type: 'LOAD_PRODUCTS',
-      products: data.filter((product) => product.product_name.includes(search))
+      products: data.filter((product) =>
+        product.product_name.toLowerCase().includes(search.toLowerCase())
+      )
     })
   }
 
