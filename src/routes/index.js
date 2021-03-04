@@ -8,10 +8,10 @@ import ProductDetail from 'views/ProductDetail'
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/sign-up" component={SignUp} />
-      <Route path="/login" component={Login} />
-      <Route path="/product/:productId" component={ProductDetail} />
+      <Route exact path="/ecommerce/" component={Home} />
+      <Route path="/ecommerce/sign-up" component={SignUp} />
+      <Route path="/ecommerce/login" component={Login} />
+      <Route path="/ecommerce/product/:productId" component={ProductDetail} />
     </Switch>
   )
 }
