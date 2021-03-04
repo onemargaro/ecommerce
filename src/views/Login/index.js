@@ -66,7 +66,7 @@ const Login = () => {
             </Button>
           </Control>
         </Field>
-        <Link to="sign-up">Register</Link>
+        <Link to="/ecommerce/sign-up">Register</Link>
       </Box>
     </Container>
   )

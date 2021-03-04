@@ -37,7 +37,7 @@ const ProductCard = (props) => {
       </Card.Content>
       <Card.Footer>
         <Card.Footer.Item renderAs="span">
-          <Link to={`/product/${_id}`}>Details</Link>
+          <Link to={`/ecommerce/product/${_id}`}>Details</Link>
         </Card.Footer.Item>
         <Card.Footer.Item renderAs="span">Buy</Card.Footer.Item>
       </Card.Footer>

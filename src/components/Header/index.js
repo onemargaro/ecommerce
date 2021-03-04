@@ -30,7 +30,7 @@ const Header = (props) => {
             </Navbar.Item>
           ) : (
             <Navbar.Item renderAs="span">
-              <Link to="/login">Login</Link>
+              <Link to="/ecommerce/login">Login</Link>
             </Navbar.Item>
           )}
         </Navbar.Container>
