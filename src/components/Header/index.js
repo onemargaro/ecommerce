@@ -14,7 +14,7 @@ const Header = (props) => {
       <Navbar.Menu>
         <Navbar.Container>
           <Navbar.Item renderAs="span">
-            <Link to="/">Home</Link>
+            <Link to="/ecommerce">Home</Link>
           </Navbar.Item>
         </Navbar.Container>
         <Navbar.Container position="end">
