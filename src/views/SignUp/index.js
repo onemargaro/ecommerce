@@ -31,7 +31,7 @@ const SignUp = () => {
     })
   }
   return (
-    <Container className="is-flex is-justify-content-center">
+    <Container>
       <Box>
         <Field>
           <Label>First Name</Label>
@@ -89,9 +89,13 @@ const SignUp = () => {
             </Select>
           </Control>
         </Field>
-
-        <Field kind="group">
-          <Control className="is-flex is-justify-content-end">
+        <Field
+          style={{
+            display: 'flex',
+            justifyContent: 'center'
+          }}
+        >
+          <Control>
             <Button
               color="primary"
               rounded

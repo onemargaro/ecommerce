@@ -54,19 +54,31 @@ const Login = () => {
             />
           </Control>
         </Field>
-        <Field className="is-flex">
+        <Field
+          style={{
+            display: 'flex',
+            justifyContent: 'center'
+          }}
+        >
+          <Control>
+            <Button type="primary" color="primary" rounded renderAs="span">
+              <Link to="/ecommerce/sign-up">Register</Link>
+            </Button>
+          </Control>
           <Control>
             <Button
+              style={{
+                marginLeft: '1em'
+              }}
               type="primary"
               color="primary"
               rounded
               onClick={() => signIn(user)}
             >
-              Submit
+              Log in
             </Button>
           </Control>
         </Field>
-        <Link to="/ecommerce/sign-up">Register</Link>
       </Box>
     </Container>
   )

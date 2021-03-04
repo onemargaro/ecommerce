@@ -8,9 +8,11 @@ import Routes from 'routes'
 import axios from 'axios'
 import { BASE_URL } from 'configuration'
 import { authReducer, initialAuthState } from 'context/auth/auth.reducer'
+import { useHistory } from 'react-router-dom'
 
 const App = () => {
   const [state, dispatch] = React.useReducer(authReducer, initialAuthState)
+  const history = useHistory()
   const authContextValue = React.useMemo(
     () => ({
       // eslint-disable-next-line space-before-function-paren
@@ -30,6 +32,7 @@ const App = () => {
             }
           )
           dispatch({ type: 'SIGN_IN', token: dataToken.token, me: dataMe.user })
+          history.push('/ecommerce')
         } catch (error) {
           dispatch({ type: 'ERROR', error })
         }
@@ -56,6 +59,7 @@ const App = () => {
             }
           )
           dispatch({ type: 'SIGN_IN', token: dataToken.token, me: dataMe.user })
+          history.push('/ecommerce')
         } catch (error) {
           dispatch({ type: 'ERROR', error })
         }
