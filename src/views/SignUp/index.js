@@ -76,6 +76,7 @@ const SignUp = () => {
               value={user.password}
               onChange={onChange}
               type="password"
+              name="password"
               placeholder="Password"
             />
           </Control>
