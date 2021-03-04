@@ -4,6 +4,7 @@ import Home from 'views/Home'
 import Login from 'views/Login'
 import SignUp from 'views/SignUp'
 import ProductDetail from 'views/ProductDetail'
+import CreateProduct from 'views/CreateProduct'
 
 const Routes = () => {
   return (
@@ -12,6 +13,7 @@ const Routes = () => {
       <Route path="/ecommerce/sign-up" component={SignUp} />
       <Route path="/ecommerce/login" component={Login} />
       <Route path="/ecommerce/product/:productId" component={ProductDetail} />
+      <Route path="/ecommerce/create-product" component={CreateProduct} />
     </Switch>
   )
 }

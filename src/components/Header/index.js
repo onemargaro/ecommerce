@@ -1,11 +1,14 @@
 import React from 'react'
 import Navbar from 'react-bulma-components/lib/components/navbar'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import AuthContext from 'context/auth/auth.context'
 
 const Header = (props) => {
   const { signOut } = React.useContext(AuthContext)
+  const history = useHistory()
+  // TODO: remove this and creates a way to know about auth user
+  const isAuthorized = window.localStorage.getItem('token')
   return (
     <Navbar color="primary" fixed="top">
       <Navbar.Brand>
@@ -25,6 +28,13 @@ const Header = (props) => {
               </Navbar.Link>
               <Navbar.Dropdown>
                 <Navbar.Item>{props.user.role}</Navbar.Item>
+                {isAuthorized && (
+                  <Navbar.Item
+                    onClick={() => history.push('ecommerce/create-product')}
+                  >
+                    Create Product
+                  </Navbar.Item>
+                )}
                 <Navbar.Item onClick={() => signOut()}>Log out</Navbar.Item>
               </Navbar.Dropdown>
             </Navbar.Item>
